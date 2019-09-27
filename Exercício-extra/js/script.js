@@ -1,5 +1,7 @@
 const formulario = document.getElementById('formulario-de-comentarios');
 
+const erro = document.querySelector(".meu-erro")
+
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
     let inputUsuario = document.querySelector(".input-de-texto");
@@ -12,7 +14,6 @@ formulario.addEventListener("submit", function (evento) {
     if (mensagem === "") {
 
         console.error("You made a mistake");
-        alert.error("You made a mistake");
 
         //ou 
 
